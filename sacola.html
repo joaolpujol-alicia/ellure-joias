@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacola — Ellure Joias</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Ellure Joias">
+      <span class="brand-name">Ellure Joias</span>
+    </a>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="sobre.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#" data-instagram-link target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="sacola.html" class="cart-link active" aria-label="Sacola">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head" style="margin-bottom: var(--gap-md);">
+        <span class="eyebrow">Sua seleção</span>
+        <h2>Sacola</h2>
+      </div>
+
+      <div id="cart-layout" class="cart-layout">
+        <div id="cart-items"></div>
+
+        <aside class="cart-summary">
+          <h3>Finalizar pedido</h3>
+          <div class="form-field">
+            <label for="customer-name">Seu nome</label>
+            <input type="text" id="customer-name" placeholder="Como podemos te chamar?">
+          </div>
+          <div class="form-field">
+            <label for="customer-phone">Seu telefone (opcional)</label>
+            <input type="text" id="customer-phone" placeholder="(11) 90000-0000">
+          </div>
+
+          <div class="summary-row"><span>Peças</span><span id="summary-count">0</span></div>
+          <div class="summary-row total"><span>Total</span><span id="summary-total">R$ 0,00</span></div>
+
+          <button id="checkout-btn" class="btn btn-whatsapp btn-block">Finalizar no WhatsApp</button>
+          <p style="font-size:0.78rem;margin-top:0.8rem;">Ao finalizar, seu pedido é enviado por WhatsApp para confirmarmos disponibilidade, forma de pagamento e entrega.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo.png" alt="Ellure Joias" style="height:44px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;">
+      <p>Semijoias e joias com essência em cada detalhe.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="sacola.html">Sacola</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Fale conosco</h4>
+      <ul>
+        <li><a href="https://wa.me/5511969560141" target="_blank" rel="noopener">WhatsApp vendas</a></li>
+        <li><a href="https://wa.me/5511984594249" target="_blank" rel="noopener">WhatsApp suporte</a></li>
+        <li><a href="#" data-instagram-link target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Ellure Joias. Todos os direitos reservados.</span>
+    <span>Feito com essência, em cada detalhe.</span>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.6 0-3.1-.44-4.38-1.2l-.31-.19-3.01.79.8-2.93-.2-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.38-5.86c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const itemsEl = document.getElementById("cart-items");
+  const { formatPrice } = window.EllureData;
+
+  function renderCart() {
+    const cart = window.EllureCart.getCart();
+
+    if (cart.length === 0) {
+      itemsEl.innerHTML = `
+        <div class="empty-state">
+          Sua sacola está vazia.<br><br>
+          <a href="produtos.html" class="btn btn-primary">Ver produtos</a>
+        </div>`;
+    } else {
+      itemsEl.innerHTML = cart.map((item) => `
+        <div class="cart-item" data-id="${item.id}">
+          <img src="${item.image_url}" alt="${item.name}">
+          <div>
+            <h3 style="margin-bottom:0.3rem;">${item.name}</h3>
+            <div class="price-now">${formatPrice(item.price)}</div>
+            <div class="qty-control" style="margin-top:0.5rem;">
+              <button type="button" class="qty-dec" aria-label="Diminuir">−</button>
+              <span>${item.qty}</span>
+              <button type="button" class="qty-inc" aria-label="Aumentar">+</button>
+            </div>
+          </div>
+          <button class="remove" type="button">Remover</button>
+        </div>
+      `).join("");
+    }
+
+    document.getElementById("summary-count").textContent = window.EllureCart.getCartCount();
+    document.getElementById("summary-total").textContent = formatPrice(window.EllureCart.getCartTotal());
+  }
+
+  itemsEl.addEventListener("click", (e) => {
+    const row = e.target.closest(".cart-item");
+    if (!row) return;
+    const id = row.dataset.id;
+    const cart = window.EllureCart.getCart();
+    const item = cart.find((i) => i.id === id);
+
+    if (e.target.classList.contains("qty-inc")) {
+      window.EllureCart.updateCartQty(id, item.qty + 1);
+      renderCart();
+    } else if (e.target.classList.contains("qty-dec")) {
+      window.EllureCart.updateCartQty(id, item.qty - 1);
+      renderCart();
+    } else if (e.target.classList.contains("remove")) {
+      window.EllureCart.removeFromCart(id);
+      renderCart();
+    }
+  });
+
+  document.getElementById("checkout-btn").addEventListener("click", () => {
+    const cart = window.EllureCart.getCart();
+    if (cart.length === 0) {
+      alert("Sua sacola está vazia. Adicione uma peça antes de finalizar.");
+      return;
+    }
+    const name = document.getElementById("customer-name").value.trim();
+    const phone = document.getElementById("customer-phone").value.trim();
+    window.EllureCart.checkoutToWhatsApp(name, phone);
+  });
+
+  renderCart();
+</script>
+</body>
+</html>
