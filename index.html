@@ -180,7 +180,6 @@
 <script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 <script>
-  const { formatPrice, productCardHTML } = window.EllureData;
   (async () => {
     const el = document.getElementById("featured-products");
     const products = await window.EllureData.fetchProducts({ featuredOnly: true, limit: 4 });
